@@ -18,11 +18,11 @@
     </style>
 </head>
 <body>
-    <h1>Some os valores:</h1>
+    <h1>Sum the values:</h1>
     <input type="number" name="txtn1" id="txtn1"> +
     <input type="number" name="txtn2" id="txtn2">
     <input type="button" value="Somar" onclick="somar()">
-    <div id="res">Resultado aparece aqui.....</div>
+    <div id="res">Resulting.....</div>
     <script>
         function somar() {
             var tn1 = window.document.getElementById('txtn1')
@@ -31,7 +31,7 @@
             var n1 = Number(tn1.value) //veio de uma caixa de texto, então é texto
             var n2 = Number(tn2.value)
             var s = n1 + n2
-            res.innerHTML = `A soma dos valores ${n1} e ${n2} é ${s}`
+            res.innerHTML = `The sum between ${n1} and ${n2} is equal to ${s}`
 
         }
     </script>

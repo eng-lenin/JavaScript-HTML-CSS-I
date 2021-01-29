@@ -6,9 +6,9 @@
     <title>DETRAN</title>
 </head>
 <body>
-    <h1>Sistema de Multas</h1>
-    Velocidade do Carro: <input type="number" name="txtvel" id="txtvel"> km/h 
-    <input type="button" value="Verificar" onclick="calcular()">
+    <h1>Traffic Tickets</h1>
+    Car speed: <input type="number" name="txtvel" id="txtvel"> km/h 
+    <input type="button" value="Verify" onclick="calcular()">
     <div id="res"></div>
     <script>
         function calcular() {
@@ -16,13 +16,13 @@
             var res = window.document.querySelector('div#res') // # pq é id, se fosse class seria ponto
             var txtv = window.document.getElementById('txtvel')
             var vel = Number(txtv.value)
-            res.innerHTML = `<p>Sua velocidade no radar foi de <strong>${vel}</strong> km/h.</p>`
+            res.innerHTML = `<p>You are driving at <strong>${vel}</strong> km/h.</p>`
             if (vel > 60) {
-                res.innerHTML += (`<p>Você está a ${vel} km/h, ultrapassou o limite de 60 km/h.</p>`)
+                res.innerHTML += (`<p>Your speed is ${vel} km/h, above the speed limit of 60 km/h.</p>`)
     }
             else {
-                res.innerHTML +=('<p>Você está dentro do limite.</p>')}
-            res.innerHTML += `Dirija com segurança.` }
+                res.innerHTML +=('<p>You are driving at the speed limit.</p>')}
+            res.innerHTML += `Drive safety.` }
         
 
 

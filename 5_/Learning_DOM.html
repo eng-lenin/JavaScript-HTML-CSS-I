@@ -14,18 +14,18 @@
     </style>
 </head>
 <body>
-    <h1>Iniciando os estudos com DOM</h1>
-    <p>Aqui vai o resultado, jovem</p>
-    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
-    <div id="msg">Clique em mim</div>
+    <h1>Learning DOM</h1>
+    <p>Here is the result.</p>
+    <p>That is <strong>DOM</strong> in JavaScript.</p>
+    <div id="msg">Click</div>
     <script>
         var p1 = window.document.getElementsByTagName('p')[0] //elementS tá no plural, requer o uso do colchete mesmo que tenha somente um elemento
         var p2 = window.document.getElementsByTagName('p')[1]
         var d = window.document.getElementById('msg')
-        window.document.write(`Está escrito assim: ${p1.innerText}<br/>`) //texto dentro do parágravo que virou variável p1
+        window.document.write(`It is writen: ${p1.innerText}<br/>`) //texto dentro do parágravo que virou variável p1
         p1.style.color = 'green'
         d.style.background = 'green'
-        window.document.write('E está escrito assim: ' +p2.innerHTML) //escreve com a formatação
+        window.document.write('And it is writen, as well: ' +p2.innerHTML) //escreve com a formatação
         window.document.write(d.innerHTML)
         //tem vários jeitos de fazer o get elements, pode dar um nome ou class ali no mesmo lugar do id e buscar
         //get elements por seletor é novo, se usa window.document.queryselector(div#msg)  
