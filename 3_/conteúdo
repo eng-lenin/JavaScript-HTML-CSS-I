@@ -1,0 +1,17 @@
+a palavra var pode ser substituída por let, tanto faz
+var let const - cada situação pede uma, veremos mais pra frente
+Number(n)
+String(n)
+
+formatado: `eu estou aprendendo ${n}` se usa pra não precisar ficar fechando aspas
+...e concatenando o tempo todo.
+
+s.lenght
+s.toUpperCase()
+s.toLowerCase()
+n.toFixed(2) formata o numero n com duas casas decimais
+dá pra trocar ponto pela virgula com um replace, igual python
+
+n.toLocaleString('pt-BR, {style: 'currency', currency: 'BLR'}) 
+mostra número em reais brasileiros
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa 001</title>
+    <style>
+        body {background-color: rgb(28, 151, 110);
+        color: white;  /* isso é um comentário no css */
+        font: normal 20pt arial;
+        }
+        h1 {
+            color: yellow
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1> <!-- isso é um comentário para o html -->
+    <p>Já me livrei da maldição.</p>
+    <script>
+        var n1 = Number.parseInt(window.prompt('Digite um número: '))//Number.parseInt para não virar um string, Number.parseFloat para float
+        var n2 = Number.parseInt(window.prompt('Digite outro número: '))
+        var s = n1+n2 //sem a transformação de str pra int esse + serviria para concatenar (juntar)
+        window.alert('A soma dos valores é: '+s)
+        //nas versões mais recentes basta Number(n) e o JS decide se é int ou float
+        //de número pra str se usa String(n)
+    </script>
+</body>
+</html>

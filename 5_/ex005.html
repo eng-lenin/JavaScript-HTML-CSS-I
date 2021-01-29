@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(124, 141, 172);
+            color:blanchedalmond;
+            font: normal 18pt arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos com DOM</h1>
+    <p>Aqui vai o resultado, jovem</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[0] //elementS tá no plural, requer o uso do colchete mesmo que tenha somente um elemento
+        var p2 = window.document.getElementsByTagName('p')[1]
+        var d = window.document.getElementById('msg')
+        window.document.write(`Está escrito assim: ${p1.innerText}<br/>`) //texto dentro do parágravo que virou variável p1
+        p1.style.color = 'green'
+        d.style.background = 'green'
+        window.document.write('E está escrito assim: ' +p2.innerHTML) //escreve com a formatação
+        window.document.write(d.innerHTML)
+        //tem vários jeitos de fazer o get elements, pode dar um nome ou class ali no mesmo lugar do id e buscar
+        //get elements por seletor é novo, se usa window.document.queryselector(div#msg)  
+        //as id se representam por #, se fosse class seria ponto .
+    </script>
+</body>
+</html>
