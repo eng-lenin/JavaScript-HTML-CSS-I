@@ -1,2 +1,2 @@
 # GitHub Projects
- Trainning
+ Trainning Javascript, HTML and CSS
