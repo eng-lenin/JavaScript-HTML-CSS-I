@@ -1,6 +1,7 @@
 var agora = new Date()
 var diaSem = agora.getDay()
-console.log(diaSem) //vai dizer em número
+console.log(`Today is....`)
+//console.log(diaSem) vai dizer em número
 /* 
 0 domingo
 1 segunda
@@ -12,27 +13,27 @@ console.log(diaSem) //vai dizer em número
 7 pra cima não existe */
 switch(diaSem) {
     case(0):
-        console.log('Domingo')
+        console.log('Sunday')
         break
     case(1):
-        console.log('Segunda')
+        console.log('Monday')
         break
     case(2):
-        console.log('Terça')
+        console.log('Tuesday')
         break
     case(3):
-        console.log('Quarta')
+        console.log('Wednesday')
         break
     case(4):
-        console.log('Quinta')
+        console.log('Thursday')
         break
     case(5):
-        console.log('Sexta')
+        console.log('Friday')
         break
     case(6):
-        console.log('Sábado')
+        console.log('Saturday')
         break
     default:
-        console.log('ERRO')
+        console.log('ERROR')
         break    
 }

@@ -3,31 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+    <title>Super-counting</title>
     <link rel="stylesheet" href="estilo.css"> <!--criei o arquivo para mexer no estilo (modularizado do python), segurar control-->
 </head>
 <body>
     <header>
-        <h1>Tabuada</h1>
+        <h1>Let's count...</h1>
     </header>
     <section>
-        <div>
-            <p>Número: <input type="number" name="num" id="txtn">
-            <input type="button" value="Gerar Tabuada" onclick="tabuada()"></p>
+        <div id='dados'><p>Start: <input type="number" name="inicio" id="txti"></p>
+            <p>End: <input type="number" name="fim" id="txtf"></p>
+            <p>Step: <input type="number" name="passo" id="txtp"></p>
+            <p><input type="button" value="Count" onclick="contar()"></p>
 
         </div>
-        <div>
-            <select name="tabuada" id="seltab" size="10" >
-                <option>Digite um número acima...</option>
-
-            
-            </select>
+        <div id='res'>Preparing the count...
 
         </div>
 
     </section>
     <footer>
-        <p>&copy; Curso em Vídeo</p>
+        <p>&copy; eng-lenin</p>
 
     </footer>
     <script src="script.js"></script><!--mesma coisa do css, fazer script em outro arquivo, segurar ctrl e clicar para criar-->

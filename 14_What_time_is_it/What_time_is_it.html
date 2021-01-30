@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Exercício</title>
+    <title>Relógio</title>
     <link rel="stylesheet" href="estilo.css"> <!--criei o arquivo para mexer no estilo (modularizado do python), segurar control-->
 </head>
-<body>
+<body onload = "carregar()">
     <header>
-        <h1>Título</h1>
+        <h1>Hora do Dia</h1>
     </header>
     <section>
-        <div>Testando....
-
+        <div id='msg'>
+            Testando
         </div>
-        <div>
-
+        <div id='foto'>
+            <img id = 'imagem1' src="manha.png" alt="Foto da Manha">
         </div>
 
     </section>
     <footer>
-        <p>&copy; Curso em Vídeo</p>
+        <p>&copy; eng-lenin</p>
 
     </footer>
-    <script src="script.js"></script><!--mesma coisa do css, fazer script em outro arquivo, segurar ctrl e clicar para criar-->
+    <script src="script.js"></script> <!--mesma coisa do css, fazer script em outro arquivo, segurar ctrl e clicar para criar-->
 </body>
 </html>

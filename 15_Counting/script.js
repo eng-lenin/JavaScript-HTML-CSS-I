@@ -5,15 +5,15 @@ function contar() {
     let res = document.getElementById('res')
 
     if (ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
-        res.innerHTML = 'Impossível contar.'
-        window.alert('Erro, valores inválidos.')
+        res.innerHTML = 'Impossible to count.'
+        window.alert('Error, invalid values.')
     } else {
-        res.innerHTML = 'Contando...<br>'
+        res.innerHTML = 'Counting...<br>'
         let i = Number(ini.value)
         let f = Number(fim.value)
         let p = Number(passo.value)
         if (p <= 0) {
-            window.alert('Erro, passo inválido. PASSO CONSIDERADO = 1')
+            window.alert('Error. STEP = 1')
             p = 1
         }
         if (i < f) {

@@ -23,7 +23,7 @@ function adicionar() {
     if (isNumero(num.value) && !inLista(num.value, valores)) { //o ! é pq se não tiver adicionado ele vai dar true e adicionar
         valores.push(Number(num.value))
         let item = document.createElement('option')
-        item.text = `O valor ${num.value} adicionado foi`
+        item.text = `The value ${num.value} is add`
         lista.appendChild(item)
         res.innerHTML = ''
     } else {
@@ -35,7 +35,7 @@ function adicionar() {
 
 function finalizar() {
     if (valores.length == 0) {
-        window.alert('Adicione algum valor antes de finalizar.')
+        window.alert('Add a value before analyze.')
     } else {
         let tot = valores.length
         let menor = valores[0]
@@ -55,11 +55,11 @@ function finalizar() {
         }
         media = soma/tot
         res.innerHTML = ''
-        res.innerHTML += `<p>O total é de ${tot} elementos cadastrados.</p>`
-        res.innerHTML += `<p>O maior valor informado foi ${maior}.</p>`
-        res.innerHTML += `<p>O menor valor informado foi ${menor}.</p>`
-        res.innerHTML += `<p>A soma dos valores informados foi ${soma}.</p>`
-        res.innerHTML += `<p>A média dos valores informados foi ${media}.</p>`
+        res.innerHTML += `<p>You added ${tot} values.</p>`
+        res.innerHTML += `<p>Tha highest value is ${maior}.</p>`
+        res.innerHTML += `<p>The lowest value is ${menor}.</p>`
+        res.innerHTML += `<p>The sum of the values is ${soma}.</p>`
+        res.innerHTML += `<p>The average of the values is ${media}.</p>`
 
     }
 }

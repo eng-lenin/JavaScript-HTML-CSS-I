@@ -4,7 +4,7 @@ function verificar() {
     var fano = document.getElementById('txtano')
     var res = document.querySelector('div#res')
     if (fano.value.length == 0 || Number(fano.value) > ano) {
-        window.alert('ERRO, tente novamente.')
+        window.alert('ERROR, try again.')
     } else {
         
         var fsex = document.getElementsByName('radsex')
@@ -13,7 +13,7 @@ function verificar() {
         var img = document.createElement('img')
         img.setAttribute('id','foto')
         if (fsex[0].checked) {
-            gen = 'Homem'
+            gen = 'Man'
             if (idade >=0 && idade <10) {
                 //criança
                 img.setAttribute('src', 'bebemenino.png')
@@ -28,7 +28,7 @@ function verificar() {
                 img.setAttribute('src', 'senhorhomem.png')
             }
         } else if (fsex[1].checked) {
-            gen = "Mulher"
+            gen = "Woman"
             if (idade >=0 && idade <10) {
                 //criança
                 img.setAttribute('src', 'bebemenina.png')
@@ -44,7 +44,7 @@ function verificar() {
             }
         }
         res.style.textAlign = 'center'
-        res.innerHTML= `Sua idade é de ${idade} anos e você é ${gen}.`
+        res.innerHTML= `You are ${idade} years old and you are a ${gen}.`
         res.appendChild(img)
 
     }

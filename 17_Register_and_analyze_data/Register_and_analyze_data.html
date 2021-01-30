@@ -3,27 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supercontador</title>
+    <title>Numbers</title>
     <link rel="stylesheet" href="estilo.css"> <!--criei o arquivo para mexer no estilo (modularizado do python), segurar control-->
 </head>
 <body>
     <header>
-        <h1>Vamos contar...</h1>
+        <h1>Number Analyzer</h1>
     </header>
     <section>
-        <div id='dados'><p>Início: <input type="number" name="inicio" id="txti"></p>
-            <p>Fim: <input type="number" name="fim" id="txtf"></p>
-            <p>Passo: <input type="number" name="passo" id="txtp"></p>
-            <p><input type="button" value="Contar" onclick="contar()"></p>
+        <div>Number between 1 and 100
+            <input type="number" name="fnum" id="fnum">
+            <input type="button" value="Add" onclick="adicionar()">
+            <br><br><select name="flista" id="flista" size="10"></select>
+            <br><input type="button" value="Analyze" onclick="finalizar()">
 
         </div>
-        <div id='res'>Preparando a contagem...
+        <div id='res'>
 
         </div>
 
     </section>
     <footer>
-        <p>&copy; Curso em Vídeo</p>
+        <p>&copy; eng-lenin</p>
 
     </footer>
     <script src="script.js"></script><!--mesma coisa do css, fazer script em outro arquivo, segurar ctrl e clicar para criar-->

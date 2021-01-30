@@ -5,19 +5,19 @@ function carregar() {
     var hora = data.getHours()
     var bom = ('bom dia boa tar boa noite')
     if (hora >= 0 && hora < 12) {
-        var bom = `Bom dia`
+        var bom = `Good morning`
         img.src = `manha.png`
         document.body.style.background = '#e2cd9f'
     } else if (hora >= 12 && hora < 18) {
-        var bom = `Boa tarde`
+        var bom = `Good afternoon`
         img.src = `tarde.png`
         document.body.style.background = '#b9846f'
     } else {
-        var bom = `Boa noite`
+        var bom = `Good evening`
         img.src = `noite.png`
         document.body.style.background = '#515154'
     }
-    msg.innerHTML = `Agora são ${hora} horas. ${bom}.` // botei aqui embaixo para ler o bom dia tarde noite
+    msg.innerHTML = `Now it is ${hora} o'clock. ${bom}.` // botei aqui embaixo para ler o bom dia tarde noite
 
 
 }
